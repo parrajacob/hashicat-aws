@@ -1,8 +1,8 @@
 module "vpc" {
-  
   source  = "app.terraform.io/sf-jacob-parra-training/vpc/aws"
-
-  name = "database-vpc"
+  version = "1.64.0"
+  
+  name = "db-vpc"
   cidr = "10.0.0.0/16"
 
   azs             = ["us-east-1a", "us-east-1b", "us-east-1c"]
