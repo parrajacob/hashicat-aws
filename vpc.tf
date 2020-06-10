@@ -4,7 +4,7 @@ module "vpc" {
   name = "hashicat-database"
   cidr = "10.0.0.0/16"
 
-  azs             = ["us-east-1"]
+  azs             = ["us-east-1c"]
   private_subnets = ["10.0.10.0/24", "10.0.0.0/16"]
   public_subnets  = ["10.0.10.0/24", "10.0.0.0/16"]
 
